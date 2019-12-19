@@ -195,15 +195,18 @@ body {font-size:16px;}
 <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
 <script>
 
-  function a() {
+  function formSubmit() {
 var userValues = {
- "Email":document.getElementsByClassName("email"),
- "Message":document.getElementsByClassName("message"),
- "Name":document.getElementsByClassName("name")};
+ "Email":document.getElementsByClassName("email")[0].value
+,
+ "Message":document.getElementsByClassName("message")[0].value
+,
+ "Name":document.getElementsByClassName("name")[0].value
+)};
  window.FMApi = window.FMApi || [];
  window.FMApi.push("fm_form_tracking", "B7C8D08AFC8F824A3D7C23F65AF47D07B3947EE7D20A3999A37FB83719AFC47117BE32AFEED0365D52FF0A8A2FEED6738D80E5FA454E39447617CD956F68136F", userValues);
   }
-  a();
+ 
 </script>
 
 <script>
