@@ -174,15 +174,15 @@ body {font-size:16px;}
     <form onsubmit="return formSubmit()" >
       <div class="w3-section">
         <label>Name</label>
-        <input class="w3-input w3-border" type="text" name="Name" required>
+        <input class="name w3-input w3-border" type="text" name="Name" required>
       </div>
       <div class="w3-section">
         <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
+        <input class="email w3-input w3-border" type="text" name="Email" required>
       </div>
       <div class="w3-section">
         <label>Message</label>
-        <input class="w3-input w3-border" type="text" name="Message" required>
+        <input class="message w3-input w3-border" type="text" name="Message" required>
       </div>
       <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom"> Send Message</button>
     </form>  
@@ -197,9 +197,9 @@ body {font-size:16px;}
 
   function a() {
 var userValues = {
- "Email":"hena2change@gmail.comr",
- "Message":" w3-input w3-border ",
- "Name":" w3-input w3-border"};
+ "Email":document.getElementsByClassName("email"),
+ "Message":document.getElementsByClassName("message"),
+ "Name":document.getElementsByClassName("name")};
  window.FMApi = window.FMApi || [];
  window.FMApi.push("fm_form_tracking", "B7C8D08AFC8F824A3D7C23F65AF47D07B3947EE7D20A3999A37FB83719AFC47117BE32AFEED0365D52FF0A8A2FEED6738D80E5FA454E39447617CD956F68136F", userValues);
   }
